@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: white;
+}
+
+.main-container {
+  padding: 10px;
+}
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 21%;
+  min-height: 20px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: #00704A;
+ }
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+/* DRINKS */
+.card-1 {
+  
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Asian Dolce Latte.jpg');
+  background-size: cover;
+}
+
+.card-2 {
+ background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/doubleshot-icedshaken-esp.jpg');
+  background-size: cover;
+}
+
+.card-3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/vanilla-sweetcream-coldbrew.jpg');
+  background-size: cover;
+}
+
+.card-4 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/caramel_macchiato.jpg');
+  background-size: cover;
+}
+
+.card-5 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/coffee-press.jpg');
+  background-size: cover;
+}
+
+.card-6 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/cold-brew.jpg');
+  background-size: cover;
+}
+
+.card-7 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/blacktea-latte.jpg');
+  background-size: cover;
+}
+
+.card-8 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/freshly-brewed-tea.jpg');
+  background-size: cover;
+}
+
+.card-9 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/greentea-latte.jpg');
+  background-size: cover;
+}
+
+.card-10 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/icedshaked-lemon-tea.jpg');
+  background-size: cover;
+}
+
+
+.card-11 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/caramel-hotchocolate.jpg');
+  background-size: cover;
+}
+
+.card-12 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/mangopassion-coldfoam.jpg');
+  background-size: cover;
+}
+
+.card-13 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/caramel-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-14 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/chocolatechip-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-15 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/darkmocha-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-16 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/greentea-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-17 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/javachip-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-18 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/mocha-frappuccino.jpg');
+  background-size: cover;
+}
+
+.card-19 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/raspberryblackcurrant-frappuccino.jpg');
+  background-size: cover;
+}
+
+/* FOOD */
+.card-20 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Donut2.png');
+  background-size: cover;
+}
+
+.card-21 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Banana-Chocolate-Muffin.png');
+  background-size: cover;
+}
+
+.card-22 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Jumbo-Croissant.png');
+  background-size: cover;
+}
+
+.card-23 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Jumbo-Croissant.png');
+  background-size: cover;
+}
+
+.card-24 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Breakfast-Focaccia-Sandwich.png');
+  background-size: cover;
+}
+
+.card-25 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Croque-Monsieur.png');
+  background-size: cover;
+}
+
+.card-26 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Croissant-Bun-with-Chicken-Loaf,-Egg-_-Cheese_R2.png');
+  background-size: cover;
+}
+
+.card-27 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Sausage-with-Caramelized-Onion-Sandwich_R2.jpg');
+  background-size: cover;
+}
+
+.card-28 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Baked-Chicken-Teriyaki-Sandwich_R2.png');
+  background-size: cover;
+}
+
+.card-29 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Tiramisu_R2.png');
+  background-size: cover;
+}
+
+.card-30 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Raspberry-Cheesecake.png');
+  background-size: cover;
+}
+
+
+.card-31 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/passion-fruit-cheesecake.png');
+  background-size: cover;
+}
+
+.card-32 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Creamy Crock Pot Chicken Ciabatta.png');
+  background-size: cover;
+}
+
+/* MERCHANDISE */
+
+.card-33 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/merch1.png');
+  background-size: cover;
+}
+
+.card-34 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Double-Wall-Star-Reserve-Black-Mug---10oz-min.png');
+  background-size: cover;
+}
+
+.card-35 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Core-Star-Reserve-Mug---12oz-min.png');
+  background-size: cover;
+}
+
+.card-36 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Double-Wall-Faceted-Reserve-Mug---12oz-min.png');
+  background-size: cover;
+}
+
+.card-37 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/Stainless-Steel-Reserve-White-Water-Bottle---20oz-min.png');
+  background-size: cover;
+}
+
+.card-38 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/11081629_Stanley-Starbucks-Reserve-Roastery-Stainless-Steel-Tumbler-(17oz).png');
+  background-size: cover;
+}
+
+.card-39 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/special1.png');
+  background-size: cover;
+}
+
+.card-40 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/special2.png');
+  background-size: cover;
+}
+
+.card-41 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/special3.png');
+  background-size: cover;
+}
+
+.card-42 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.3)
+    ),url('img/freshly-brewed-tea.jpg');
+  background-size: cover;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
